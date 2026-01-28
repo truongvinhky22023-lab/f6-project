@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" name="csrf-token" content="zFRQOu5pwbQjkqJSpF5Tlv9cUA3nWRNDfDTeU1pF">
     <link rel="icon" type="image/x-icon" href="https://www.lssdhrtime.com/assets/images/Logo_LSCSD.png">
-    <title>Hỗ Trợ Truy Nã</title>
+    <title>Hỗ Trợ Xử Án</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="https://www.lssdhrtime.com/assets/bootstrap-5.3.7-dist/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="user-info d-flex align-items-center gap-2">
                     <span>
-                        Xin chào, <a href="https://www.lssdhrtime.com/profile" class=""> Sĩ quan
+                        Xin chào, <a href="https://www.lssdhrtime.com/profile" class=""> Sĩ Quan
                         <strong>Jasper Dark</strong>
                         </a>
                     </span>
@@ -80,10 +80,9 @@
     </header>
     <nav class="navbar navbar-expand-lg navbar-custom position-sticky top-0">
         <div class="container color-white">
-            <a class="navbar-brand d-flex align-items-center logo_lssd"  href="https:/index.html">
+                <a class="navbar-brand d-flex align-items-center logo_lssd"  href="https:/index.html">
                 <img src="https://www.lssdhrtime.com/assets/images/Logo_LSCSD.png" alt="Logo" height="50" class="me-3">
             </a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -97,11 +96,11 @@
                             href="/bao-lanh-toi-pham.html">Bảo Lãnh Tội Phạm</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link "
+                        <a class="nav-link active-link"
                             href="/ho-tro-xu-an.html">Hỗ Trợ Xử Án</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active-link"
+                        <a class="nav-link "
                            href="/ho-tro-truy-na.html">Hỗ Trợ Truy Nã</a>
                     </li>
                             </ul>
@@ -114,7 +113,7 @@
     </nav>
 
     
-    <!-- Custom Loading Overlay -->
+  <!-- Custom Loading Overlay -->
     <div id="loadingOverlay" class="loader-overlay" style="display: none;">
         <div class="lssd-loader-content">
             <div class="lssd-badge">
@@ -131,9 +130,43 @@
     </div>
 
         <div id="toast" class="toast-custom">Đã sao chép tội danh!</div>
+
     <div class="container container-responsive">
         <div class="group-function">
             <div class="function_law mb-4 p-2">
+                <div class="func_01">
+                    <ul class="list-unstyled d-flex flex-row justify-content-between align-items-center">
+                        <li class="text-center checkbox_text">
+                            <input type="number" class="input_proc form-control gioi_han_number" id="input-proc-1" min="1"
+                                value="6">
+                            <input type="checkbox" class="custom_check_01 input_proc form-check-input"
+                                id="viPhamLuatTieuDungCheck">
+                            <label for="input-proc-1">Vi phạm luật người tiêu dùng</label>
+                        </li>
+                        <li class="checkbox_text">
+                            <input type="checkbox" class="custom_check_01 input_proc form-check-input" id="input-proc-4"
+                                data-toidan="Sử dụng vũ khí thô sơ công cộng (Có Giấy NVQS)" data-phut="30"
+                                data-mucdo="2">
+                            <label for="input-proc-4">Có giấy NVQS</label>
+                        </li>
+                        <li class="checkbox_text">
+                            <input type="checkbox" class="custom_check_01 input_proc form-check-input" id="input-proc-5"
+                                data-toidan="hợp tác" data-phut="-10" data-type="giam">
+                            <label for="input-proc-6">Có hợp tác giảm 10p</label>
+                        </li>
+                        <li class="checkbox_text">
+                            <input type="checkbox" class="custom_check_01 input_proc form-check-input" id="input-proc-6"
+                                data-toidan="điều tra" data-phut="-10" data-type="giam">
+                            <label for="input-proc-7">Giảm 10p điều tra</label>
+                        </li>
+                        
+                        <li class="checkbox_text">
+                            <input type="number" class="input_proc form-control gioi_han_number" id="input-proc-7" value="5">
+                            
+                            <label for="input-proc-8">Giảm phút tự chọn</label>
+                        </li>
+                    </ul>
+                </div>
                 <div class="func_02 input_func d-flex flex-row gap-3">
                     <div class="input_func_01 d-flex align-items-center gap-2">
                         <input type="text" class="input_proc form-control" id="input-proc-2" placeholder="Nhập tên">
@@ -153,7 +186,7 @@
                         CCCD: <span class="text_show" id="show-cccd"></span> <br>
                         Tội Danh: <span class="text_show" id="show-toiDanh"></span> <br>
                         Mức Án: <span class="text_show" id="show-soPhut"></span> <br>
-                        Bằng chứng:
+                        Đã xử lý
                     </p>
                 </form>
             </div>
@@ -164,7 +197,7 @@
         </div>
         <div class="box-form-1">
             <div class="masonry-columns">
-                  <!-- Mức độ 1 -->
+                <!-- Mức độ 1 -->
                 <div class="masonry-item">
                     <h6>
                         <button class="muc_do btn text-decoration-none d-flex align-items-center" type="button"
