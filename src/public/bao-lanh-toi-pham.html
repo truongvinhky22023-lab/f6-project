@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" name="csrf-token" content="zFRQOu5pwbQjkqJSpF5Tlv9cUA3nWRNDfDTeU1pF">
+    <link rel="icon" type="image/x-icon" href="https://www.lssdhrtime.com/assets/images/Logo_LSCSD.png">
+    <title>Bảo Lãnh Tội Phạm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://www.lssdhrtime.com/assets/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
+        integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://www.lssdhrtime.com/assets/css/style_update_22012026_185000.css">
+            <link rel="stylesheet" href="https://www.lssdhrtime.com/assets/css/form_criminal_bail.css">
+</head>
+        
+<body>
+            <link rel="stylesheet" href="https://www.lssdhrtime.com/assets/css/navbar_update_22012026_184700.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://www.lssdhrtime.com/assets/css/nav_marquee_1.css">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=BBH+Sans+Bogle&family=Lilita+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom"></nav> -->
+    <header class="main-header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="nav-logo">
+                    <!-- <img src="https://www.lssdhrtime.com/assets/images/banner_lssd.png" width="230" height="auto" alt=""> -->
+                    <h5 class="lilita-one-regular">VINEWOOD SHERIFF'S DEPARTMENT</h5>
+                </div>
+                <div class="user-info d-flex align-items-center gap-2">
+                    <span>
+                        Xin chào, <a href="https://www.lssdhrtime.com/profile" class=""> Sĩ Quan
+                        <strong>Jasper Dark</strong>
+                        </a>
+                    </span>
+                    <div class="nav-avartar">
+                                                    <img src="https://cdn.discordapp.com/avatars/489780355453288449/69323ceb6e2d67cdad9208c50685a0b8.png"
+                                alt="Avatar"
+                                class="rounded-circle user-avatar"
+                                width="46"
+                                height="46"
+                                onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Hvien+Dat&background=random';">
+                                            </div>
+                    <div class="dropdown">
+                        <button class="btn-drop-custom " type="button" id="userDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <ul class="dropdown-menu lssd-card" aria-labelledby="userDropdown">
+                            <li>
+                                <a class="dropdown-item text-primary " href="https://www.lssdhrtime.com/profile">
+                                    <i class="fas fa-info-circle me-2"></i>Hồ sơ
+                                </a>
+                            </li>
+                            <!--<li><a class="dropdown-item text-success" href="#"><i class="fas fa-cog me-2"></i>Cài đặt</a></li>-->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-danger" href="https://www.lssdhrtime.com/logout"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    <i class="fas fa-sign-out-alt me-2"></i>Đăng xuất
+                                </a>
+                                <form id="logout-form" action="https://www.lssdhrtime.com/logout" method="POST" class="d-none">
+                                    <input type="hidden" name="_token" value="zFRQOu5pwbQjkqJSpF5Tlv9cUA3nWRNDfDTeU1pF" autocomplete="off">                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-custom position-sticky top-0">
+        <div class="container color-white">
+            <a class="navbar-brand d-flex align-items-center logo_lssd" href="https://www.lssdhrtime.com/home">
+                <img src="https://www.lssdhrtime.com/assets/images/Logo_LSCSD.png" alt="Logo" height="50" class="me-3">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active-link"
+                            href="/bao-lanh-toi-pham.html">Bảo Lãnh Tội Phạm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "
+                            href="/ho-tro-xu-an.html">Hỗ Trợ Xử Án</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "
+                            href="/ho-tro-truy-na.html">Hỗ Trợ Truy Nã</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Custom Loading Overlay -->
+    <div id="loadingOverlay" class="loader-overlay" style="display: none;">
+        <div class="lssd-loader-content">
+            <div class="lssd-badge">
+                <div class="star"></div>
+                <div class="text">LSSD</div>
+            </div>
+            <div class="loading-text">Loading VineWood Sheriff Department...</div>
+            <div class="loader-clock">
+                <span class="hour"></span>
+                <span class="min"></span>
+                <span class="circel"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <form class="box-form-1 lssd-card container mb-5">
+        <h2 class="lssd-control-btn ms-5 me-5 mt-3 mb-3">Bảo Lãnh Tội Phạm</h2>
+        <hr>
+
+        <!--  -->
+        <div class="form-group-1">
+            <label id="label-1">Tên Người Giải Quyết: </label>
+            <input class="input-ia" type="text" id="input-1" value="" placeholder="Tên người đang giải quyết bảo lãnh"
+                required>
+        </div>
+        <div class="form-group-1">
+            <label id="label-2">Tên Người Bảo Lãnh: </label>
+            <input class="input-ia" type="text" id="input-2" value="" placeholder="Tên công dân đến bảo lãnh " required>
+        </div>
+        <div class="form-group-1">
+            <label id="label-3">Tên Người Vi Phạm: </label>
+            <input class="input-ia" type="text" id="input-3" value="" placeholder="Tên đối tượng vi phạm" required>
+        </div>
+        <div class="form-group-1">
+            <label id="label-4">CCCD: </label>
+            <input class="input-ia" type="number" id="input-4" value="" placeholder="CCCD người vi phạm" required>
+        </div>
+        <div class="form-group-1">
+            <label id="label-5">Tội Danh: </label>
+            <!-- <input class="input-ia h6" type="text" id="input-5" value="" required> -->
+            <textarea class="input-ia h6 area-input" type="text" id="input-5"
+                placeholder="Tự nhập tay hoặc chọn phía bên dưới" required oninput="autoResize(this)"></textarea>
+            <button class="btn btn-danger float-right" onclick="resetValue()" type="button">Reset</button>
+        </div>
+
+        <!-- Hộp Đựng Luật -->
+        <div class="box-criminal-law mb-3">
+            <p></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Mức Độ 1:</h6>
+                    <div class="box-law">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tội danh</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                       Sử dụng nắm đấm gây rối trật tự công cộng.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                       Gây rối trật tự nơi công cộng.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                      Tội cản trở người thi hành công vụ.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                        Tàng trữ hoặc sử dụng Giáp trái phép
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                      Tội sử dụng vật phẩm trái phép tại nơi công cộng (giáp).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                      Tội trộm cắp bất hợp pháp tài sản công dân.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                      Tội nhập cư trái phép.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                     Tội sử dụng vũ khí thô sơ nơi công cộng.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                      Tội tàng trữ chất cấm trái phép (thảo dược).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                      Tội vu khống người khác.
+                                    </td>
+                                    </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                    Tội lăng mạ, xúc phạm đến người khác
+                                    </td>
+                                    </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 20, 'input-5', 'input-6', 'input-7')">
+                                   Có hành vi, lời lẽ xúc phạm đến người ban ngành đang onduty làm nhiệm vụ.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h6>Mức Độ 2:</h6>
+                    <div class="box-law">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tội danh</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 30, 'input-5', 'input-6', 'input-7')">
+                                     Tội gây thương tích chưa nghiêm trọng cho người khác.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 30, 'input-5', 'input-6', 'input-7')">
+                                     Tội chống đối người thi hành công vụ.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 30, 'input-5', 'input-6', 'input-7')">
+                                       Tội có hành động, lời nói, kênh chat ingame để dọa người thuộc Ban Ngành Nhà Nước đang onduty làm nhiệm vụ.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 30, 'input-5', 'input-6', 'input-7')">
+                                   Tội có hành vi rao bán, hỏi mua vũ khí trái phép tại nơi công cộng.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="not-qs"
+                                        onclick="selectSuggestion(this, 90, 'input-5', 'input-6', 'input-7')">
+                                    Tội có hành vi lừa đảo chiếm đoạt tài sản người.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td onclick="selectSuggestion(this, 30, 'input-5', 'input-6', 'input-7')">
+                                     Tội có hành vi giả dạng, tự xưng người nhà nước hoặc mặc trang phục, mạo danh người nhà nước.
+                                    </td>
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="form-group-1">
+            <label id="label-6">Mức Án: </label>
+            <input class="input-ia" type="text" id="input-6" value="" oninput="tuDongTinhTien()"
+                placeholder="Tự động hoặc tự tính tay" required>
+        </div>
+        <div class="form-group-1">
+            <label id="label-7">Số Tiền: </label>
+            <input class="input-ia" type="text" id="input-7" value="" placeholder="Tự động hoặc tự tính tay" required
+                readonly>
+        </div>
+        <!--  -->
+        <hr>
+        <button class="copy-btn" onclick="copyAllToClipboard()">Sao Chép</button>
+        <!-- <button class="reset-btn" onclick="resetValue()">Xóa dữ liệu</button> -->
+    </form>
+</div>
+
+    <!-- Thông Báo -->
+    <div class="notifications">
+        <span id="session-success" data-message=""></span>
+        <span id="session-warning" data-message=""></span>
+        <span id="session-info" data-message=""></span>
+        <!-- <span id="session-warning" data-message=""></span> -->
+        <span id="session-error" data-message=""></span>
+    </div>
+
+    
+            
+            <div class="container">
+    <footer class="d-flex flex-column flex-lg-row justify-content-between align-items-start py-3 my-4 border-top">
+        <div class="mb-3 mb-lg-0">
+            <span class="text-body-secondary">
+                © 2025 Designed and developed by <a href="" target="_blank">@idon_tgivaefuck</a> -
+                version 0.1
+            </span>
+        </div>
+        <div class="mt-2">
+            <ul class="contact_admin d-flex justify-content-end">
+                <li>
+                    <a href="https://github.com/truongvinhky22023-lab" target="_blank">
+                        <i class="custom_icon fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@sau123-developer" target="_blank">
+                        <i class="custom_icon fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/di-myname/" target="_blank">
+                        <i class="custom_icon fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+    </footer>
+</div>
+<style>
+    .contact_admin {
+        gap: 30px;
+
+        .fa-linkedin {
+            &:hover {
+                color: #0077b5;
+            }
+        }
+
+        .fa-youtube {
+            &:hover {
+                color: #ff0033;
+            }
+        }
+
+        li {
+            list-style: none;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .custom_icon {
+        position: relative;
+        font-size: 30px;
+        color: #1f2328;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            transform: translate(-50%, -50%);
+            border: 3px solid #e8a800;
+            border-radius: 50%;
+        }
+    }
+</style>        <script>
+        document.querySelector('.loader').addEventListener('submit', function (e) {
+            showLoading();
+        });
+        function previewAvatar(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const allowedTypes = ['image/jpeg', 'image/png', 'image/jpg', 'image/gif'];
+                const maxSize = 2 * 1024 * 1024; // 2MB
+
+                if (!allowedTypes.includes(file.type)) {
+                    alert('Chỉ cho phép ảnh định dạng JPEG, PNG, JPG, GIF');
+                    event.target.value = '';
+                    return;
+                }
+
+                if (file.size > maxSize) {
+                    alert('Kích thước ảnh tối đa là 2MB');
+                    event.target.value = '';
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('avatarPreview').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8YDHTMMQJE');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YDHTMMQJE"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js" integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://www.lssdhrtime.com/assets/js/loading.js"></script>
+    <script src="https://www.lssdhrtime.com/assets/js/notification.js"></script>
+    <script src="https://www.lssdhrtime.com/assets/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://www.lssdhrtime.com/assets/js/form_criminal_bail.js"></script>
+    <script>
+        document.addEventListener("click", function (e) {
+            const popup = document.querySelector(".popup");
+            const checkbox = popup.querySelector("input[type=checkbox]");
+            if (!popup.contains(e.target)) {
+                checkbox.checked = false;
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const xemBtns = document.querySelectorAll('.btn-logout');
+
+            xemBtns.forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    document.getElementById('loadingOverlay').style.display = 'flex';
+                });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const xemBtns = document.querySelectorAll('.loader-1');
+
+            xemBtns.forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    document.getElementById('loadingOverlay').style.display = 'flex';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
